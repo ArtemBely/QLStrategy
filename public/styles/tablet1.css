@@ -6,6 +6,24 @@
 	.phone{
 		margin-left: 150px;
 	}
+	.submenu_join{
+		width: 150px;
+	}
+	.nav_join:hover .submenu_join {
+		height: 80px !important;
+  }
+  .button_join, .input_join{
+		font-size: 17px;
+  }
+  .input_join{
+	  width: 150px;
+  }
+  .submenu_language_item{
+		margin-left: 6px;
+  }
+  .submenu_language{
+		width: 38px;
+  }
 	/*MainScreen*/
 	.wrap_mainScreen{
 		width:930px;
@@ -171,7 +189,6 @@
 		top: 5px;
 	}
 	#footer_trigon{
-		padding-left: 5px;
 		grid-row: 2/3;
 		top: -12px;
 		position: relative;

@@ -48,10 +48,11 @@
 	text-decoration: none;
 	color:#B7000D;
 	border: 2px solid #B7000D;
-	padding: 9px 24px;
+	padding: 9px 20px;
 	grid-row: 3/4;
 	grid-column: 2/3;
 	transition: all 0.15s ease;
+	font-family: "Inter-Bold";
 }
 .taxLegal_button:hover{
 	color: #840009;
@@ -68,9 +69,14 @@
 	font-size: 16px;
 	line-height: 19px;
 	color: #3D3D3D;
-	border-bottom: 1px solid #D0000F;
+	border-bottom: 1px dashed #B8B8B8;
 	height: 27px;
 	margin: 0;
+}
+.section_title1:active,
+.section_title2:active,
+.section_title3:active{
+	border-bottom: 1px solid #D0000F;
 }
 .taxLegal_section1{
 	box-sizing: border-box;

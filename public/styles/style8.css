@@ -144,10 +144,75 @@
 }
 .table_information{
 	background:url(../images/Group\ 218.svg) center no-repeat;
-	padding-left: 15px;
+	padding-left: 175px;
 	position: absolute;
 	height: 27px;
 	width: 27px;
+	margin-top: -26px;
+	z-index: 2;
+}
+.table_nav1 .table_information{
+	padding-left: 230px;
+	z-index: 13;
+}
+.table_nav2 .table_information{
+	z-index: 11;
+}
+.table_nav3 .table_information{
+	padding-left: 220px;
+}
+.table_nav_menu_title{
+	font-family: 'Inter-Bold';
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0 0 5px 0;
+	width: 322px;
+}
+.table_nav_menu_text{
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0;
+	font-family: 'Inter-Regular';
+   font-weight: 400;
+	width: 322px;
+}
+.table_nav_menu1, .table_nav_menu2,
+.table_nav_menu3{
+	background: #FFFFFF;
+	padding: 21px 33px;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	position: absolute;
+	width: 388.49px;
+	height: 0px;
+	opacity: 0;
+	box-sizing: border-box;
+}
+.table_nav_menu1{
+	margin-left: 128px;
+   top: 1585px;
+	z-index: 12;
+}
+.table_nav_menu2{
+	margin-left: 103px;
+   top: 1585px;
+	z-index: 10;
+}
+.table_nav_menu3{
+	margin-left: 125px;
+   top: 1585px;
+}
+.table_nav1:hover .table_nav_menu1{
+	height: 316px;
+	opacity: 1;
+}
+.table_nav2:hover .table_nav_menu2{
+	height: 294px;
+	opacity: 1;
+}
+.table_nav3:hover .table_nav_menu3{
+	height: 265px;
+	opacity: 1;
 }
 .table_column, .table_row{
 	font-family: 'Inter-Bold';
@@ -157,7 +222,6 @@
 	background: #F5F5F5;
 	border: 1px solid #CCCCCC;
 	padding: 22px 24px;
-	white-space: nowrap;
 	text-align: left;
 	box-sizing: border-box;
 }

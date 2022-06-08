@@ -74,7 +74,28 @@
 		padding: 10px 15px;
 		width: 207px;
 	}
-
+	.table_nav_menu_text, .table_nav_menu_title{
+		font-size: 12px;
+    	line-height: 20px;
+		width: 250px;
+	}
+	.table_nav_menu1, .table_nav_menu2, .table_nav_menu3{
+		width: 290px;
+		top: 2260px;
+		padding: 21px;
+	}
+	.table_nav_menu1{
+		margin-left: 120px;
+	}
+	.table_nav_menu2{
+		margin-left: 90px;
+	}
+	.table_nav1:hover .table_nav_menu1 {
+		height: 306px;
+  }
+	.table_nav2:hover .table_nav_menu2 {
+		height: 324px;
+	}
 	.link_last_row1, .link_last_row2, .link_last_row3,
 	.link_last_row4, .link_last_row5, .link_last_row6,
 	.link_last_row7, .link_last_row8, .link_last_row9{

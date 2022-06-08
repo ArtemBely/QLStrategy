@@ -1,3 +1,15 @@
+@media (min-width: 1349px) and (max-width: 1608px) {
+	.table_nav_menu3{
+		margin-left: 0px;
+		top: 1598px;
+	}
+}
+@media (min-width: 1290px) and (max-width: 1349px) {
+	.table_nav_menu3{
+		left: 900px;
+		top: 1598px;
+	}
+}
 @media (min-width: 992px) and (max-width: 1290px) {
 /*SwissCompanies*/
 	.wrap_SwissCompanies{
@@ -38,8 +50,29 @@
 		background: #F5F5F5;
 		border: 1px solid #CCCCCC;
 		padding: 22px 24px;
-		white-space: nowrap;
 		text-align: left;
+	}
+	.table_nav2 .table_information {
+		padding-left: 175px;
+  }
+	.table_nav_menu1, .table_nav_menu2, .table_nav_menu3{
+		width: 340px;
+	}
+	.table_nav_menu_title, .table_nav_menu_text{
+		width: 283px;
+	}
+	.table_nav1:hover .table_nav_menu1{
+		height: 352px;
+	}
+	.table_nav2:hover .table_nav_menu2{
+		height: 354px;
+	}
+	.table_nav3:hover .table_nav_menu3{
+		height: 245px;
+	}
+	.table_nav_menu3{
+		left: 550px;
+		top: 1598px;
 	}
 	.table_row{
 		padding: 22px 20px;

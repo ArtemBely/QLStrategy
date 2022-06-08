@@ -157,6 +157,52 @@
 		top: 160px;
 		left: 645px;
 	}
+	.location_1_info, .location_2_info,
+	.location_3_info, .location_4_info{
+		padding: 14px 0 20px 20px;
+		width: 359.66px;
+	}
+	.location_2_info{
+		top: -80px;
+		left: 545px;
+	}
+	.location_1_info{
+		top: -5px;
+		left: 125px;
+	}
+	.location_3_info{
+		top: 50px;
+		left: 568px;
+	}
+	.location_4_info{
+		top: 180px;
+		left: 300px;
+	}
+	.location_nav1:hover .location_1_info{
+		height: 85px;
+		width: 310px;
+	}
+	.location_nav2:hover .location_2_info{
+		height: 129px;
+	}
+	.location_nav3:hover .location_3_info{
+		height: 105px;
+		width: 350px;
+	}
+	.location_nav4:hover .location_4_info{
+		height: 105px;
+	}
+	.location_country{
+		font-size: 14px;
+		line-height: 22px;
+		margin: 0 0 5px 0;
+	}
+	.country_info{
+		width: 317px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+
 
 
 	/*Error*/

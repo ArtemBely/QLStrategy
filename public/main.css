@@ -136,7 +136,9 @@ body {
 	display:inline-block;
 	margin-left: 17px;
 }
-.submenu_item:hover{
+.submenu_item:hover,
+.link2:hover,
+.phone:hover{
 	border-bottom:1.5px solid #D0000F;
 }
 .business_in_sw{
@@ -235,6 +237,7 @@ body {
    border-right: none;
    border-left: none;
 	margin-left: 10px;
+	padding: 0;
 }
 .button_join{
 	color: #B8B8B8;
@@ -250,6 +253,7 @@ body {
 	text-align: start;
 	margin-top: 8px;
    background: none;
+	padding: 0;
 }
 
 .language{
@@ -632,6 +636,11 @@ body {
 	line-height: 26px;
 	height: 36px;
 	border-bottom: 1px solid #B8B8B8;
+	text-decoration: none;
+	color: #000000;
+}
+.information_more:hover{
+	border-bottom: 1px solid #D0000F;
 }
 .information_block1{
 	grid-template-rows: 358px 108px 176px 36px;
@@ -857,6 +866,7 @@ body {
    border-right: none;
    border-left: none;
 	margin-left: 10px;
+	padding: 0;
 }
 .button_join2{
 	color: #B8B8B8;
@@ -872,6 +882,7 @@ body {
 	text-align: start;
 	margin-top: 8px;
    background: none;
+	padding: 0;
 }
 
 
@@ -1126,10 +1137,11 @@ body {
 	text-decoration: none;
 	color:#B7000D;
 	border: 2px solid #B7000D;
-	padding: 9px 24px;
+	padding: 9px 20px;
 	grid-row: 3/4;
 	grid-column: 2/3;
 	transition: all 0.15s ease;
+	font-family: "Inter-Bold";
 }
 .taxLegal_button:hover{
 	color: #840009;
@@ -1146,9 +1158,14 @@ body {
 	font-size: 16px;
 	line-height: 19px;
 	color: #3D3D3D;
-	border-bottom: 1px solid #D0000F;
+	border-bottom: 1px dashed #B8B8B8;
 	height: 27px;
 	margin: 0;
+}
+.section_title1:active,
+.section_title2:active,
+.section_title3:active{
+	border-bottom: 1px solid #D0000F;
 }
 .taxLegal_section1{
 	box-sizing: border-box;
@@ -1593,10 +1610,75 @@ body {
 }
 .table_information{
 	background:url("/images/Group 218.svg") center no-repeat;
-	padding-left: 15px;
+	padding-left: 175px;
 	position: absolute;
 	height: 27px;
 	width: 27px;
+	margin-top: -26px;
+	z-index: 2;
+}
+.table_nav1 .table_information{
+	padding-left: 230px;
+	z-index: 13;
+}
+.table_nav2 .table_information{
+	z-index: 11;
+}
+.table_nav3 .table_information{
+	padding-left: 220px;
+}
+.table_nav_menu_title{
+	font-family: 'Inter-Bold';
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0 0 5px 0;
+	width: 322px;
+}
+.table_nav_menu_text{
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0;
+	font-family: 'Inter-Regular';
+   font-weight: 400;
+	width: 322px;
+}
+.table_nav_menu1, .table_nav_menu2,
+.table_nav_menu3{
+	background: #FFFFFF;
+	padding: 21px 33px;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	position: absolute;
+	width: 388.49px;
+	height: 0px;
+	opacity: 0;
+	box-sizing: border-box;
+}
+.table_nav_menu1{
+	margin-left: 128px;
+   top: 1585px;
+	z-index: 12;
+}
+.table_nav_menu2{
+	margin-left: 103px;
+   top: 1585px;
+	z-index: 10;
+}
+.table_nav_menu3{
+	margin-left: 125px;
+   top: 1585px;
+}
+.table_nav1:hover .table_nav_menu1{
+	height: 316px;
+	opacity: 1;
+}
+.table_nav2:hover .table_nav_menu2{
+	height: 294px;
+	opacity: 1;
+}
+.table_nav3:hover .table_nav_menu3{
+	height: 265px;
+	opacity: 1;
 }
 .table_column, .table_row{
 	font-family: 'Inter-Bold';
@@ -1606,7 +1688,6 @@ body {
 	background: #F5F5F5;
 	border: 1px solid #CCCCCC;
 	padding: 22px 24px;
-	white-space: nowrap;
 	text-align: left;
 	box-sizing: border-box;
 }
@@ -2271,6 +2352,12 @@ body {
 .benefits1_row1{
 	margin-bottom: 85px;
 }
+#about_icon:hover{
+	fill:#840009;
+}
+svg path:hover{
+	fill:#840009;
+}
 .benefits2_row1 .about_benefets_text{
 	width: 250px;
 }
@@ -2361,25 +2448,89 @@ body {
 	display: block;
 	top: 100px;
 	left: 780px;
+	z-index: 3;
 }
 .map_location_2{
 	position: absolute;
 	display: block;
 	top: 50px;
 	left: 980px;
+	z-index: 3;
 }
 .map_location_3{
 	position: absolute;
 	display: block;
 	top: 240px;
 	left: 1035px;
+	z-index: 3;
 }
 .map_location_4{
 	position: absolute;
 	display: block;
 	top: 280px;
 	left: 1200px;
+	z-index: 3;
 }
+.location_1_info, .location_2_info,
+.location_3_info, .location_4_info{
+	background: #FFFFFF;
+	padding: 20px 0 30px 35px;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	position: absolute;
+	width: 374.61px;
+	height: 0px;
+	opacity: 0;
+	box-sizing: border-box;
+}
+.location_2_info{
+	top: -150px;
+   left: 1014px;
+}
+.location_1_info{
+	top: -20px;
+   left: 440px;
+}
+.location_3_info{
+	top: 70px;
+   left: 1055px;
+}
+.location_4_info{
+	top: 320px;
+   left: 860px;
+}
+.location_nav1:hover .location_1_info{
+	height: 170px;
+	opacity: 1;
+}
+.location_nav2:hover .location_2_info{
+	height: 243px;
+	opacity: 1;
+}
+.location_nav3:hover .location_3_info{
+	height: 205px;
+	opacity: 1;
+}
+.location_nav4:hover .location_4_info{
+	height: 245px;
+	opacity: 1;
+}
+.location_country{
+	font-family: 'Inter-Bold';
+	font-size: 24px;
+	line-height: 39px;
+	margin: 0 0 5px 0;
+}
+.country_info{
+	width: 322px;
+	font-size: 24px;
+	line-height: 39px;
+	margin: 0;
+}
+.location_tablet{
+	display: none;
+}
+
 /*Error*/
 .container_error{
 	display: flex;
@@ -2976,6 +3127,9 @@ body {
 	position: absolute;
 	margin: -72px 0 0 715px;
 }
+.legal_button:hover{
+	background:#840009;
+}
 .marketing_block1,.marketing_block2,
 .marketing_block3, .marketing_block4,
 .marketing_block5{
@@ -3123,6 +3277,24 @@ body {
 	.phone{
 		margin-left: 150px;
 	}
+	.submenu_join{
+		width: 150px;
+	}
+	.nav_join:hover .submenu_join {
+		height: 80px !important;
+  }
+  .button_join, .input_join{
+		font-size: 17px;
+  }
+  .input_join{
+	  width: 150px;
+  }
+  .submenu_language_item{
+		margin-left: 6px;
+  }
+  .submenu_language{
+		width: 38px;
+  }
 	/*MainScreen*/
 	.wrap_mainScreen{
 		width:930px;
@@ -3288,7 +3460,6 @@ body {
 		top: 5px;
 	}
 	#footer_trigon{
-		padding-left: 5px;
 		grid-row: 2/3;
 		top: -12px;
 		position: relative;
@@ -3333,8 +3504,20 @@ body {
 	.link2, .link3, .phone{
 		margin-left: 27px;
 	}
+	.link3{
+		top: -7px;
+	}
+	.submenu_join{
+		top: 23px;
+	}
 	.language{
 		margin-left: 61px;
+	}
+	.submenu_join{
+		margin-left:26px;
+	}
+	.submenu_language{
+		margin-left:61px;
 	}
 	/*MainScreen*/
 	.wrap_mainScreen{
@@ -3557,11 +3740,14 @@ body {
 		top: 0;
 		padding-top: 0;
 	}
-	#footer_trigon{
-		grid-column: 4/5;
-		grid-row: 3/4;
-		padding-left: 2px;
-		padding-top: 10px;
+	#footer_trigon {
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 12px solid #FFFFFF;
+		padding-top: 17px;
+  }
+  #footer_trigon:hover{
+		border-bottom: 12px solid #D0000F;
 	}
 	.phone2{
 		grid-column: 3/4;
@@ -3622,7 +3808,20 @@ body {
 		grid-row: 3/4;
 		top: 0px;
 	}
-
+	.nav_language2{
+		grid-column: 4/5;
+		grid-row: 2/3;
+	}
+	.nav_join2 {
+		top: 0px;
+		grid-column: 3/4;
+		grid-row: 3/4;
+  }
+  .trigon_footer {
+		grid-column: 4/5;
+		grid-row: 3/4;
+	}
+	
 
 }
 
@@ -3986,6 +4185,18 @@ body {
 }
 
 
+@media (min-width: 1349px) and (max-width: 1608px) {
+	.table_nav_menu3{
+		margin-left: 0px;
+		top: 1598px;
+	}
+}
+@media (min-width: 1290px) and (max-width: 1349px) {
+	.table_nav_menu3{
+		left: 900px;
+		top: 1598px;
+	}
+}
 @media (min-width: 992px) and (max-width: 1290px) {
 /*SwissCompanies*/
 	.wrap_SwissCompanies{
@@ -4026,8 +4237,29 @@ body {
 		background: #F5F5F5;
 		border: 1px solid #CCCCCC;
 		padding: 22px 24px;
-		white-space: nowrap;
 		text-align: left;
+	}
+	.table_nav2 .table_information {
+		padding-left: 175px;
+  }
+	.table_nav_menu1, .table_nav_menu2, .table_nav_menu3{
+		width: 340px;
+	}
+	.table_nav_menu_title, .table_nav_menu_text{
+		width: 283px;
+	}
+	.table_nav1:hover .table_nav_menu1{
+		height: 352px;
+	}
+	.table_nav2:hover .table_nav_menu2{
+		height: 354px;
+	}
+	.table_nav3:hover .table_nav_menu3{
+		height: 245px;
+	}
+	.table_nav_menu3{
+		left: 550px;
+		top: 1598px;
 	}
 	.table_row{
 		padding: 22px 20px;
@@ -4188,8 +4420,28 @@ body {
 		background: #F5F5F5;
 		border: 1px solid #CCCCCC;
 		padding: 22px 24px;
-		white-space: nowrap;
 		text-align: left;
+	}
+	.table_nav2 .table_information {
+		padding-left: 175px;
+	}
+	.table_nav_menu_text, .table_nav_menu_title{
+		font-size: 12px;
+    	line-height: 20px;
+		width: 240px;
+	}
+	.table_nav_menu1, .table_nav_menu2, .table_nav_menu3{
+		width: 300px;
+		top: 1807px;
+	}
+	.table_nav1:hover .table_nav_menu1 {
+		height: 326px;
+  }
+  .table_nav2:hover .table_nav_menu2 {
+		height: 324px;
+	}
+	.table_nav3:hover .table_nav_menu3 {
+		height: 245px;
 	}
 	.table_row{
 		padding: 22px 20px;
@@ -4462,6 +4714,52 @@ body {
 		top: 160px;
 		left: 645px;
 	}
+	.location_1_info, .location_2_info,
+	.location_3_info, .location_4_info{
+		padding: 14px 0 20px 20px;
+		width: 359.66px;
+	}
+	.location_2_info{
+		top: -80px;
+		left: 545px;
+	}
+	.location_1_info{
+		top: -5px;
+		left: 125px;
+	}
+	.location_3_info{
+		top: 50px;
+		left: 568px;
+	}
+	.location_4_info{
+		top: 180px;
+		left: 300px;
+	}
+	.location_nav1:hover .location_1_info{
+		height: 85px;
+		width: 310px;
+	}
+	.location_nav2:hover .location_2_info{
+		height: 129px;
+	}
+	.location_nav3:hover .location_3_info{
+		height: 105px;
+		width: 350px;
+	}
+	.location_nav4:hover .location_4_info{
+		height: 105px;
+	}
+	.location_country{
+		font-size: 14px;
+		line-height: 22px;
+		margin: 0 0 5px 0;
+	}
+	.country_info{
+		width: 317px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+
 
 
 	/*Error*/
@@ -4777,6 +5075,26 @@ body {
 	.map_location_4{
 		top: 100px;
 		left: 420px;
+	}
+	.location_1_info, .location_2_info,
+	.location_3_info, .location_4_info{
+		display: none;
+	}
+	.location_tablet{
+		display: block;
+		margin: 50px 0 0 0;
+	}
+	.location_tablet_country{
+		font-family: 'Inter-Bold';
+		font-size: 24px;
+		line-height: 39px;
+		margin: 0 0 5px 0;
+	}
+	.location_tablet_info{
+		font-size: 24px;
+		line-height: 39px;
+		margin: 0;
+		width: 535px;
 	}
 }
 
@@ -5306,8 +5624,13 @@ body {
 	#footer_trigon{
 		grid-column: 4/5;
 		grid-row: 4/5;
-		padding-left: 2px;
 		padding-top: 10px;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 12px solid #FFFFFF;
+	}
+	  #footer_trigon:hover{
+		border-bottom: 12px solid #D0000F;
 	}
 	.phone2{
 		grid-column: 3/4;
@@ -5367,6 +5690,29 @@ body {
 		grid-column: 3/4;
 		grid-row: 4/5;
 		top: 0px;
+	}
+	.nav_join2 {
+		top: 0px;
+		position: relative;
+		grid-column: 3/4;
+		grid-row: 4/5;
+	}
+	.nav_language2 {
+		grid-column: 4/5;
+		grid-row: 3/4;
+  }
+  .trigon_footer {
+		grid-column: 4/5;
+		grid-row: 4/5;
+	}
+	.submenu_join2{
+		top: 27px;
+	}
+	.submenu_language2{
+		width: 40px;
+	}
+	.submenu_language_item2{
+		margin-left: 10px;
 	}
 }
 
@@ -5675,8 +6021,17 @@ body {
 	#footer_trigon{
 		grid-column: 2/3;
 		grid-row: 8/9;
-		padding-left: 2px;
 		padding-top: 12px;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 12px solid #FFFFFF;
+	}
+	#footer_trigon:hover{
+		border-bottom: 12px solid #D0000F;
+	}
+	.trigon_footer {
+		grid-column: 2/3;
+		grid-row: 8/9;
 	}
 	.phone2{
 		grid-column: 1/2;
@@ -5737,6 +6092,27 @@ body {
 		grid-row: 8/9;
 		top: 0px;
 	}
+	.nav_join2 {
+		top: 0;
+		grid-column: 1/2;
+		grid-row: 8/9;
+	}
+	.nav_language2 {
+		grid-column: 2/3;
+		grid-row: 7/8;
+  }
+  .submenu_join2{
+	  top: 27px;
+	  padding-top: 15px;
+  }
+  .nav_join2:hover .submenu_join2 {
+		height: 70px !important;
+	}
+	.input_join2, .button_join2{
+		font-size: 16px;
+    	line-height: 20px;
+	}
+
 }
 
 
@@ -6264,7 +6640,18 @@ body {
 		padding: 10px 15px;
 		width: 207px;
 	}
-
+	.table_nav_menu_text, .table_nav_menu_title{
+		font-size: 12px;
+    	line-height: 20px;
+		width: 250px;
+	}
+	.table_nav_menu1, .table_nav_menu2, .table_nav_menu3{
+		width: 290px;
+		top: 2260px;
+	}
+	.table_nav_menu1{
+		margin-left: 120px;
+	}
 	.link_last_row1, .link_last_row2, .link_last_row3,
 	.link_last_row4, .link_last_row5, .link_last_row6,
 	.link_last_row7, .link_last_row8, .link_last_row9{
@@ -6980,6 +7367,26 @@ body {
 		top: 70px;
 		left: 305px;
 	}
+	.location_1_info, .location_2_info,
+	.location_3_info, .location_4_info{
+		display: none;
+	}
+	.location_tablet{
+		display: block;
+		margin: 39px 0 0 0;
+	}
+	.location_tablet_country{
+		font-family: 'Inter-Bold';
+		font-size: 24px;
+		line-height: 39px;
+		margin: 0 0 5px 0;
+	}
+	.location_tablet_info{
+		font-size: 24px;
+		line-height: 39px;
+		margin: 0;
+		width: 444px;
+	}
 }
 
 
@@ -7344,6 +7751,26 @@ body {
 	.map_location_4{
 		top: 40px;
 		left: 195px;
+	}
+	.location_1_info, .location_2_info,
+	.location_3_info, .location_4_info{
+		display: none;
+	}
+	.location_tablet{
+		display: block;
+		margin: 22px 0 0 0;
+	}
+	.location_tablet_country{
+		font-family: 'Inter-Bold';
+		font-size: 14px;
+		line-height: 22px;
+		margin: 0 0 5px 0;
+	}
+	.location_tablet_info{
+		font-size: 14px;
+		line-height: 22px;
+		margin: 0;
+		width: 250px;
 	}
 }
 

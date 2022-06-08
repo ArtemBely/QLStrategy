@@ -129,6 +129,11 @@
 	line-height: 26px;
 	height: 36px;
 	border-bottom: 1px solid #B8B8B8;
+	text-decoration: none;
+	color: #000000;
+}
+.information_more:hover{
+	border-bottom: 1px solid #D0000F;
 }
 .information_block1{
 	grid-template-rows: 358px 108px 176px 36px;

@@ -360,6 +360,26 @@
 		top: 40px;
 		left: 195px;
 	}
+	.location_1_info, .location_2_info,
+	.location_3_info, .location_4_info{
+		display: none;
+	}
+	.location_tablet{
+		display: block;
+		margin: 22px 0 0 0;
+	}
+	.location_tablet_country{
+		font-family: 'Inter-Bold';
+		font-size: 14px;
+		line-height: 22px;
+		margin: 0 0 5px 0;
+	}
+	.location_tablet_info{
+		font-size: 14px;
+		line-height: 22px;
+		margin: 0;
+		width: 250px;
+	}
 }
 
 

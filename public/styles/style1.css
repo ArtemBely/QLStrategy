@@ -136,7 +136,9 @@ body {
 	display:inline-block;
 	margin-left: 17px;
 }
-.submenu_item:hover{
+.submenu_item:hover,
+.link2:hover,
+.phone:hover{
 	border-bottom:1.5px solid #D0000F;
 }
 .business_in_sw{
@@ -235,6 +237,7 @@ body {
    border-right: none;
    border-left: none;
 	margin-left: 10px;
+	padding: 0;
 }
 .button_join{
 	color: #B8B8B8;
@@ -250,6 +253,7 @@ body {
 	text-align: start;
 	margin-top: 8px;
    background: none;
+	padding: 0;
 }
 
 .language{

@@ -43,9 +43,35 @@ function SwissCompanies(){
 						<thead>
 							<tr>
 								<th className='table_column_none'></th>
-								<th className='table_column'>GmbH (LLC)<a href='#' className='table_information'></a></th>
-								<th className='table_column'>AG (Ltd.)<a href='#' className='table_information'></a></th>
-								<th className='table_column'>Foundation<a href='#' className='table_information'></a></th>
+								<th className='table_column'>GmbH (LLC)
+								<div className='table_nav1'>
+									<a href='#' className='table_information'></a>
+									<div className='table_nav_menu1'>
+										<p className='table_nav_menu_title'>GmbH (Gesellschaft mit beschränkter Haftung – Limited Liability Company(LLC) – shareholders are registered publicly)</p>
+										<p className='table_nav_menu_text'>GmbH is a legal form of the company organisation where the shareholders’ liability is limited to the amount of their original investment, and the shareholders are not responsible for the company's debts. The shares of a private limited company, unlike the shares of a public limited company, are not offered to the general public and are not traded on a public stock exchange</p>
+									</div>
+								</div>
+								</th>
+								<th className='table_column'>AG (Ltd.)
+								<div className='table_nav2'>
+									<a href='#' className='table_information'></a>
+									<div className='table_nav_menu2'>
+										<p className='table_nav_menu_title'>AG (Aktiengesellschaft  – Joint Stock Company –share register held at the domicile)</p>
+										<p className='table_nav_menu_text'>AG is a legal form of the company organisation where  company’s shares are offered to the general public and traded on a public stock exchange. Shareholders' liability is limited to their investment. The shareholders are not responsible for the company's debts. From the customers’ perspective AG type of the company organisation is viewed as more prestigious than GmbH as it requires more solid investments.</p>
+									</div>
+								</div>
+								</th>
+								<th className='table_column'>Foundation
+								<div className='table_nav3'>
+									<a href='#' className='table_information'></a>
+									<div className='table_nav_menu3'>
+										<p className='table_nav_menu_title'>Foundation</p>
+										<p className='table_nav_menu_text'>A foundation is a category of nonprofit organization or charitable trust that will typically provide funding and support for other charitable organizations through grants, but it may engage directly in charitable activities.  A foundation has the following mandatory organs:
+										<br/>• The Foundation Council
+										<br/>• An Audit Board</p>
+									</div>
+								</div>
+								</th>
 							</tr>
 						</thead>
 						<tbody>

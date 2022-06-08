@@ -274,5 +274,25 @@
 		top: 100px;
 		left: 420px;
 	}
+	.location_1_info, .location_2_info,
+	.location_3_info, .location_4_info{
+		display: none;
+	}
+	.location_tablet{
+		display: block;
+		margin: 50px 0 0 0;
+	}
+	.location_tablet_country{
+		font-family: 'Inter-Bold';
+		font-size: 24px;
+		line-height: 39px;
+		margin: 0 0 5px 0;
+	}
+	.location_tablet_info{
+		font-size: 24px;
+		line-height: 39px;
+		margin: 0;
+		width: 535px;
+	}
 }
 
